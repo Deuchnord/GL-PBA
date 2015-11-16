@@ -1,1 +1,51 @@
-@import url("bootstrap/css/bootstrap.min.css")
+@import url("bootstrap/css/bootstrap.min.css");
+
+.cb-recto
+{
+    margin: auto;
+    background: url("img/cb-recto.jpg") no-repeat;
+    width: 677px;
+    height: 427px;
+}
+
+.cb-recto input, .cb-verso input
+{
+    background: white;
+    border: 1px solid #555555;
+    padding: 5px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.cb-recto .no-cb
+{
+    position: relative;
+    top: 200px;
+    left: 100px;
+    width: 400px;
+}
+
+.cb-recto .expir
+{
+    position: relative;
+    top: 340px;
+    left: -200px;
+    background: white;
+    border: 1px solid #555555;
+    padding: 5px;
+}
+
+.cb-verso
+{
+    margin: auto;
+    background: url("img/cb-verso.jpg");
+    width: 677px;
+    height: 427px;
+}
+
+.cb-verso .ccv
+{
+    position: relative;
+    top: 170px;
+}
