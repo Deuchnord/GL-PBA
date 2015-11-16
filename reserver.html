@@ -57,7 +57,7 @@
 			</div>
 			<form name="inscripseance" method="post" action="inscription.html">
 				<label for="ipt_date">Date de la séance</label>
-				<input onchange="displayflash(this,$('#ipt_heure'))" id="ipt_date" type="date"/>
+				<input onchange="displayflash(this,document.getElementById('ipt_heure'))" id="ipt_date" type="text"/>
 				<label for="ipt_heure">Heure</label>
 				<input id="ipt_heure" type="number"/>
 				<button onclick="$('#reussi').show()" id="valider" type="button" value="S'inscrire">Valider</button>

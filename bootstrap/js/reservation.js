@@ -1,19 +1,20 @@
 function displayflash(iptdate,iptheure)
 {
 	$flashes =$('.flash');
-	$.each($flashes,function(i){
-		$flashes[i].hidden();
-	});
+	$flashes.hide();
+	
 	if(iptdate.value=="2015-12-25")
 	{
-		$('#pascreneau').show();
+		alert("aaa");
+		$('#pascrenau').show();
 	}
-	else if(ipdate.value=="2015-12-26")
+	else if(iptdate.value=="2015-12-26")
 	{
 		$('#creneauheure').show();
 	}
-	else if(iptdate.value=="2015-12-27" && iptheure.value=="12")
+	else if(iptdate.value=="2015-12-27")
 	{
+		alert(iptheure.value);
 		$('#creneaupasdispo').show();
 	}
 }
