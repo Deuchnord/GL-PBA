@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>PBA</title>
-		<link rel="stylesheet" type="text/css" href="design.css"/>
+		<link rel="stylesheet" type="text/css" href="../design.css"/>
 		<script src="jquery.min.js" type="text/javascript"></script>
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	</head>
@@ -64,7 +64,21 @@
 			</ul>
 		</nav>
 		<div class="container">
-			<!-- On insert le contenu là-->
+			<h1>Création d'une séance</h1>
+			<p>
+				Créer une séance en indiquant les noms des deux animateurs, une date et une heure.
+			</p>
+			<form name="inscripseance" method="post" action="inscription.html">
+				<label for="anim1">Animateur 1</label>
+				<input onchange="" id="anim1" type="text"/>
+				<label for="anim2">Animateur 2</label>
+				<input onchange="" id="anim2" type="text"/>
+				<label for="ipt_date">Date de la séance</label>
+				<input onchange="" id="ipt_date" type="date"/>
+				<label for="ipt_heure">Heure</label>
+				<input id="ipt_heure" type="number"/>
+				<button onclick="displayreussi()" id="valider" type="button" value="S'inscrire">Valider</button>
+			</form>
 		</div>
 		<footer>
 			2015 - Durey Antonin, Pansa José, Tanghe Jérôme, Van de Kadsye Quentin
