@@ -1,7 +1,7 @@
-function displayCreneauPasDispo(ipt)
+function displayCreneauPasDispo(ipt,id, iptheure)
 {
-	var $message = document.getElementById('creneaupasdispo');
-	if(ipt.value==aaaa)
+	var $message = document.getElementById('id');
+	if(ipt.value=="2015-12-02" && iptheure.value=='5')
 		$message.setAttribute("style", "display:block;");
 	else
 		$message.setAttribute("style", "display:none;");
@@ -10,7 +10,7 @@ function displayCreneauPasDispo(ipt)
 function displayPasCrenau(ipt)
 {
 	var $message = document.getElementById('pascreneau');
-	if(ipt.value==aaaa)
+	if(ipt.value=="2015-12-25")
 		$message.setAttribute("style", "display:block;");
 	else
 		$message.setAttribute("style", "display:none;");
@@ -19,7 +19,7 @@ function displayPasCrenau(ipt)
 function displaycreneauHeure(ipt)
 {
 	var $message = document.getElementById('creneauheure');
-	if(ipt.value==aaaa)
+	if(ipt.value=="2015-12-01")
 		$message.setAttribute("style", "display:block;");
 	else
 		$message.setAttribute("style", "display:none;");
