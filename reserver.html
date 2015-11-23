@@ -43,13 +43,13 @@
 			<p>
 				Remplissez ce formulaire pour vous inscrire à une séance.
 			</p>
-			<div class="alert-danger" id="pascrenau" style="display:none">
+			<div class="alert-danger flash" id="pascrenau" style="display:none">
 				Il n'y a pas de créneau disponible à cette date.
 			</div>
-			<div class="alert-info" id="creneauheure" style="display:none">
+			<div class="alert-info flash" id="creneauheure" style="display:none">
 				Il y a deux créneaux disponibles à de 9h00 à 10h00 et de 14h00 à 15h00.
 			</div>
-			<div class="alert-info" id="creneaupasdispo" style="display:none">
+			<div class="alert-info flash" id="creneaupasdispo" style="display:none">
 				Ce créneau n'est pas disponible.
 			</div>
 			<div class="alert-succes" id="reussi" style="display:none">
@@ -57,10 +57,11 @@
 			</div>
 			<form name="inscripseance" method="post" action="inscription.html">
 				<label for="ipt_date">Date de la séance</label>
-				<input onchange="" id="ipt_date" type="date"/>
+				<input onchange="displayflash(this,document.getElementById('ipt_heure'))" id="ipt_date" type="text"/>
 				<label for="ipt_heure">Heure</label>
 				<input id="ipt_heure" type="number"/>
-				<button onclick="displayreussi()" id="valider" type="button" value="S'inscrire">Valider</button>
+				<button onclick="$('#reussi').show()" id="valider" type="button" value="S'inscrire">Valider</button>
+
 			</form>
 		</div>
 		<footer>
