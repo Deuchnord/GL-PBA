@@ -35,17 +35,30 @@
 		</nav>
 		<div class="container">
             <h2>Paiement de votre séance par carte bancaire</h2>
-            <p>Veuillez renseigner les champs suivants afin d'effectuer votre
-            virement. Vous serez redirigé(e) vers le site de votre banque pour
+            <div class="alert alert-danger" role="alert">
+                <p>
+                    Désolé, votre banque a refusé votre paiement.<br />
+                    Veuillez réessayer ou tenter un <a
+                                            href="payerseance-virement.html">paiement
+                                            par virement</a>.
+                </p>
+            </div>
+            <p>Vous vous apprêtez à payer la somme suivante&nbsp;:
+            <strong>20&nbsp;€</strong>.</p>
+            <p>Veuillez renseigner les informations sur votre carte bancaire
+            ci-dessous. Vous serez redirigé(e) vers le site de votre banque pour
             finaliser votre paiement.</p>
-            <form>
+
+            <form method="post" action="payerseance-cb-banque.html">
                 <div class="cb-recto">
-                    <input type="text" class="no-cb" placeholder="Numéro de carte bancaire" size="19" />
-                    <input type="text" class="expir" placeholder="MM/AA" size="5" />
+                    <input type="text" class="no-cb" placeholder="Numéro de carte bancaire" size="19" maxlength="19" required />
+                    <input type="text" class="expir" placeholder="MM/AA" size="5" maxlength="5" required />
                 </div>
                 <div class="cb-verso">
-                    <input type="text" class="ccv" placeholder="CCV" size="3" />
+                    <input type="text" class="ccv" placeholder="CCV" size="3" maxlength="3" required />
                 </div>
+
+                <p class="center" style="margin-top: 5px"><button class="btn btn-primary">Valider</button></p>
 		</div>
 		<footer>
 			2015 - Durey Antonin, Pansa José, Tanghe Jérôme, Van de Kadsye Quentin

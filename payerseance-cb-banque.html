@@ -14,12 +14,6 @@
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="obtenirunelicence.html">Obtenir une licence</a>
-				</li>
-				<li>
-					<a href="connexion.html">Connexion</a>
-				</li>
-				<li>
 					<a href="don.html">Faire un don</a>
 				</li>
 				<li>
@@ -35,41 +29,29 @@
 					<a href="live.html">Visionner une partie</a>
 				</li>
 				<li>
-					<a href="messcores.html">Consulter mes scores</a>
-				</li>
-				
-				<!-- Section Administration-->
-				
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						Administration
-					</a>
-					<ul id="admin" class="dropdown-menu">
-						<li>
-							<a href="doncourrier.html">Renseigner un don courrier</a>
-						</li>
-						<li>
-							<a href="gereranimateur.html">Gérer les animateurs</a>
-						</li>
-						<li>
-							<a href="gereremail.html">Gérer les templates de mails</a>
-						</li>
-						<li>
-							<a href="envoimail.html">Envoi des mails</a>
-						</li>
-						<li>
-							<a href="gererseance.html">Gérer les séances</a>
-						</li>
-					</ul>
-				</li>
-				<li>
 					<a href="deconnexion.html">Déconnexion</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="container">
-			<!-- On insert le contenu là-->
+            <h2>Paiement de votre séance par carte bancaire</h2>
+            <p>Ceci est le site de la banque (si si !). Il vous demande diverses
+            informations pour vérifier votre identité et effectuer le paiement.</p>
+            <p>Cliquez sur un des boutons ci-dessous pour continuer.</p>
+            <p class="center">
+                <button class="btn btn-success" id="paiement-reussi">Paiement effectué avec succès</button>
+                <button class="btn btn-danger" id="paiement-echoue">Paiement échoué</button>
+            </p>
 		</div>
+        <script type="text/javascript">
+$('#paiement-reussi').click(function() {
+    window.location.href = "payerseance-cb-success.html";
+});
+
+$('#paiement-echoue').click(function() {
+    window.location.href = "payerseance-cb-fail.html";
+});
+        </script>
 		<footer>
 			2015 - Durey Antonin, Pansa José, Tanghe Jérôme, Van de Kadsye Quentin
 		</footer>

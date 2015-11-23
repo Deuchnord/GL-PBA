@@ -23,14 +23,14 @@
     position: relative;
     top: 200px;
     left: 100px;
-    width: 400px;
+    width: 450px;
 }
 
 .cb-recto .expir
 {
     position: relative;
     top: 340px;
-    left: -200px;
+    left: -250px;
     background: white;
     border: 1px solid #555555;
     padding: 5px;
@@ -48,4 +48,17 @@
 {
     position: relative;
     top: 170px;
+    left: 580px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+footer
+{
+	text-align:center;
+	position:fixed;
+	bottom:0;
 }
