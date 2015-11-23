@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<!--On se place dans le cas où l'on n'est pas connecté-->
 <html>
 	<head>
 		<meta charset="utf-8"/>
 		<title>PBA</title>
 		<link rel="stylesheet" type="text/css" href="design.css"/>
+		<script src="jquery.min.js" type="text/javascript"></script>
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -15,44 +14,41 @@
 		<nav class="navbar navbar-default">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="inscription.php">Inscription</a>
-				</li>
-				<li>
-					<a href="connexion.html">Connexion</a>
-				</li>
-				<li>
 					<a href="don.html">Faire un don</a>
 				</li>
-				
+				<li>
+					<a href="evenements.html">Evenements</a>
+				</li>
+				<li>
+					<a href="reserver.html">Réservation</a>
+				</li>
+				<li>
+					<a href="boiteidee.html">Boite à idée</a>
+				</li>
 				<li>
 					<a href="live.html">Visionner une partie</a>
+				</li>
+				<li>
+					<a href="deconnexion.html">Déconnexion</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="container">
-			<h1>Faire un don</h1>
-			<p>
-				Sur cette page vous avez la possibilité de faire un don pour l'association PBA<br/>
-			Grâce à ce don nous pourrons inverstir dans du nouveau matériel, entretenir ce que nous avons déjà, ou encore louer les salles.
-			</p>
-			<p>
-				Afin de pouvoir faire une don, veuillez choisir un mode de paiement ci-dessous :
-			</p>
-			<div>
-				<ul>
-					<li>
-						<a href="paypal.html">Paypal</a>
-					</li>
-					<li>
-						<!--Ici le lien dira que les info seront eronnées pour le sénario alternatif 5.a -->
-						<a href="cartebleue.html">Carte bleue</a>
-					</li>
-					<li>
-						<!--Ici le lien servira pour le scénario alternatif 3.a-->
-						<a href="">Internet plus</a>
-					</li>
-				</ul>
-			</div>
+            <h2>Don par carte bancaire</h2>
+            <p>Veuillez renseigner les informations sur votre carte bancaire
+            ci-dessous. Vous serez redirigé(e) vers le site de votre banque pour
+            finaliser votre paiement.</p>
+
+            <form method="post" action="payersceance-cb-banque.html">
+                <div class="cb-recto">
+                    <input type="text" class="no-cb" placeholder="Numéro de carte bancaire" size="19" maxlength="19" required />
+                    <input type="text" class="expir" placeholder="MM/AA" size="5" maxlength="5" required />
+                </div>
+                <div class="cb-verso">
+                    <input type="text" class="ccv" placeholder="CCV" size="3" maxlength="3" required />
+                </div>
+
+                <p class="center" style="margin-top: 5px"><button class="btn btn-primary">Valider</button></p>
 		</div>
 		<footer>
 			2015 - Durey Antonin, Pansa José, Tanghe Jérôme, Van de Kadsye Quentin
