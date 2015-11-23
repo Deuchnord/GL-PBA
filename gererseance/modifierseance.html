@@ -64,7 +64,43 @@
 			</ul>
 		</nav>
 		<div class="container">
-			<!-- On insert le contenu là-->
+			<h1>Modification des séances</h1>
+			<p>
+				Sur cette page vous avez la possibilité de modifier les différentes séances de PBA.<br/>
+			</p>
+			<div>
+				<form>
+					<table style="border-collapse: separate;">
+						<tr>
+							<th>Animateur 1</th>
+							<th>Animateur 2</th>
+							<th>Date de la séance</th>
+							<th>Heure</th>
+						</tr>
+						<tr>
+							<td><input type="text" name="animateur11" value="José"></td>
+							<td><input type="text" name="animateur21" value="Quentin"></td>
+							<td><input onchange="" id="ipt_date" type="date" value="2015-12-21" /></td>
+							<td><input id="ipt_heure" type="time" value="18:00"/></td>
+						</tr>
+						
+						<tr>
+							<td><input type="text" name="animateur12" value="Corentin"></td>
+							<td><input type="text" name="animateur22" value="Pembé"></td>
+							<td><input onchange="" id="ipt_date" type="date" value="2015-12-22" /></td>
+							<td><input id="ipt_heure" type="time" value="18:00"/></td>
+						</tr>
+						
+						<tr>
+							<td><input type="text" name="animateur13" value="Sarah"></td>
+							<td><input type="text" name="animateur23" value="John"></td>
+							<td><input onchange="" id="ipt_date" type="date" value="2015-12-22" /></td>
+							<td><input id="ipt_heure" type="time" value="21:00"/></td>
+						</tr>
+					</table>
+					<input type="submit" value="Modifier">
+				</form>
+			</div>
 		</div>
 		<footer>
 			2015 - Durey Antonin, Pansa José, Tanghe Jérôme, Van de Kadsye Quentin
